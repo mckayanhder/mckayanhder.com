@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mckay anhder</title>
+   
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <!-- locomotive-scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body class="home">
+    <div class="wrapper" id="js-scroll">
+
+        <!-- menu -->
+        <nav class="menu" id="nav">
+            <div class="logo">
+                <div class="js-odoo" id="nav"></div>
+                <img src="./images/logo.svg" alt="" id="logo" height="80px">
+              </div>
+            <div class="menu__items">
+                <div class="menu__items-link"><a href="index.html">home</a></div>
+                <div class="menu__items-link"><a href="about.html">about</a></div>
+                <div class="menu__items-link active"><a href="projects.html">projects</a></div>
+                <div class="menu__items-link"><a href="contact.html">contact</a></div>
+            </div>
+        </nav>
+
+        <!-- about-section -->
+        <div class="about__container" data-scroll-section>
+            <p class="about__container-data" data-scroll>	&agrave; la code <br>I like to code.<hr> Wrote first line of code studying fullstack development at a bootcamp in 2018 and had an affinity with Front End.<br><hr>
+
+                3 years working with HTML, CSS, JS, Ruby along with a few Frameworks such as React, Vue etc.. Constantly cracking my hands at new technologies.<hr>
+                
+                Have been working freelance for personal projects and client’s site building. Searching to work full time.. <br><hr>feel free to reach out on my contact page or socials</p>
+        </div>
+
+        <div class="photo">
+            <img src="./images/IMG_3746.jpg" alt="">
+        </div>
+
+
+    </div>
+    <script src="js/script.js"></script>
+    <!-- <script>
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.75
+        });
+
+        // div following mouse 
+        TweenMax.from(".cursor-follow", 2, {
+            delay: 1,
+            opacity: 0
+        });
+
+        follower = document.querySelector('.cursor-follow');
+
+        posX = 0;
+        posY = 0;
+        mouseX = 0;
+        mouseY = 0;
+
+        TweenMax.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                TweenMax.set(follower, {
+                    css: {
+                        left: posX - 40,
+                        top: posY - 40,
+                    }
+                });
+            }
+        });
+
+        document.addEventListener("mousemove", function (e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+        });
+    </script> -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

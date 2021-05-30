@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mckay anhder</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
+    <script src="https://kit.fontawesome.com/c504008a88.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body class="home">
+    <div class="wrapper">
+  <!-- menu -->
+  <nav class="menu" id="nav">
+    <div class="logo">
+        <div class="js-odoo" id="nav"></div>
+        <img src="./images/logo.svg" alt="" id="logo" height="80px">
+      </div>
+    <div class="menu__items">
+        <div class="menu__items-link"><a href="index.html">home</a></div>
+        <div class="menu__items-link"><a href="about.html">about</a></div>
+        <div class="menu__items-link active"><a href="projects.html">projects</a></div>
+        <div class="menu__items-link"><a href="contact.html">contact</a></div>
+    </div>
+</nav>
+
+        <div class="swipe-scroll"><h3><--swipe/scroll--></h3></div>
+
+        <!-- horizontal scroll items -->
+        <div class="container">
+            <div class="container__item container__item-9">
+                <div class="icons" >  
+                    <a href="https://github.com/mckayanhder" target="_blank"><img src="./images/GitHub-Mark.png" alt="" height="80px"><h3>my code</h3></a>
+                  <a href="#"><img src="./images/anime.png" alt="" height="80px"><h3>social</h3></a>
+                  <a href="https://linkedin.com/in/mckayanhder" target="_blank"><img src="./images/CV.png" alt="" height="80px"><h3>resume</h3></a>
+                  <h3 class="tagline"> Front End Web Developer <br> <i class="fab fa-js"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-react"></i> <i class="fab fa-html5"></i>
+                  </h3>
+                </div> 
+            </div>
+
+            <div class="container__item container__item-1">
+                <h1 class="container__item-title">
+                    <a href="https://artraction.netlify.app" target="_blank">Artraction</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-2">
+                <h1 class="container__item-title">
+                    <a href="https://chatterio.netlify.app" target="_blank">Chatter</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-3">
+                <h1 class="container__item-title">
+                    <a href="https://lofitap.netlify.app" target="_blank">Lofi Tap</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-4">
+                <h1 class="container__item-title">
+                    <a href="https://retask.netlify.app" target="_blank">Tasker</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-5">
+                <h1 class="container__item-title">
+                    <a href="https://palettone.netlify.app" target="_blank">Palletone</a>
+                </h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="js/horizontal-scroll.js"></script>
+<script>
+        var blocks = document.getElementsByClassName("container__item");
+        var container = document.getElementsByClassName("container");
+        var hs = new HorizontalScroll.default({
+            blocks: blocks,
+            container: container,
+            isAnimated: true,
+            springEffect: 0.8,
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

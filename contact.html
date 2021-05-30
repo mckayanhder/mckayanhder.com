@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mckay</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+</head>
+<body class="home">
+  <nav class="menu" id="nav">
+    <div class="logo">
+        <div class="js-odoo" id="nav"></div>
+        <img src="./images/logo.svg" alt="" id="logo" height="80px">
+      </div>
+    <div class="menu__items">
+        <div class="menu__items-link"><a href="index.html">home</a></div>
+        <div class="menu__items-link"><a href="about.html">about</a></div>
+        <div class="menu__items-link active"><a href="projects.html">projects</a></div>
+        <div class="menu__items-link"><a href="contact.html">contact</a></div>
+    </div>
+</nav>
+   
+<div class="form">
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label> <p>your name</p> <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label> <p>email</p><input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label> <p>message</p> <textarea name="message"></textarea></label>
+        </p>
+        <!-- <p>
+          <label>Dog’s Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Dog’s Picture: <input type="file" name="picture"/></label>
+        </p> -->
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      <form/>
+    </div>
+
+     
+      <script src="./js/app.js"></script>
+</body>
+</html>
