@@ -18,9 +18,8 @@ body {
 	color: var(--light-color-text);
 	background: var(--light-background);
 	box-shadow: var(--light-box-shadow);
-	background-image: url("../images/darkgallery.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url("../images/plant.jpg");
+	background-attachment: fixed;
 }
 a {
 	color: var(--light-color-text);
@@ -313,7 +312,7 @@ nav {
 .photo img {
 	position: absolute;
 	top: 20%;
-	height: 90vh;
+	height: 70vh;
 	width: auto;
 	right: 10%;
 	opacity: 0.4;
@@ -412,7 +411,6 @@ form {
 	left: 35%;
 	font-family: inherit;
 	top: 30vh;
-	background: var(--light-bg-offset);
 }
 
 form p {
@@ -676,8 +674,8 @@ form textarea {
 
 	.photo img {
 		position: relative;
-		top: -700px;
-		right: 100px;
+		top: -600px;
+		right: 70px;
 		opacity: 0.4;
 	}
 
