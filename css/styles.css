@@ -621,3 +621,40 @@ form textarea {
 		border: none;
 	}
 }
+
+@media (max-width: 500px) {
+	body {
+		transform: scale(0.9);
+	}
+
+	.wrapper {
+		max-height: 100vh;
+	}
+	nav {
+		transform: scale(0.9);
+		position: fixed;
+		top: -270px;
+		left: -40px;
+	}
+
+	html .home {
+		max-height: 812px !important;
+		overflow-y: hidden;
+	}
+
+	.container {
+		transform: scale(0.9);
+		position: fixed;
+		top: -50px;
+		left: -80px;
+		height: 400px;
+		width: 300px;
+	}
+
+	.swipe-scroll {
+		position: fixed;
+		top: 65%;
+		left: 8%;
+		overflow-y: hidden;
+	}
+}
