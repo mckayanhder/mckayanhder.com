@@ -146,8 +146,7 @@ nav {
 /* horizontal scroll items  */
 
 .container {
-	margin-top: 200px;
-	margin-left: 200px;
+	margin: 200px;
 }
 
 .container__item {
@@ -573,12 +572,12 @@ form textarea {
 	.container__item {
 		width: 300px;
 		height: 500px;
-		margin: 50px 100px 20px 80px;
+		margin: 50px 50px 20px 80px;
 		left: -110px;
 		border-radius: 50px;
 	}
 	.container__item:nth-child(6) {
-		margin-right: 200px;
+		margin-right: 100px;
 	}
 
 	.container__item-header h1 {
@@ -649,6 +648,11 @@ form textarea {
 		position: fixed;
 		top: -50px;
 		left: -80px;
+		padding: 5px;
+	}
+
+	.container-item {
+		margin-right: -200px;
 	}
 	.swipe-scroll {
 		position: fixed;
