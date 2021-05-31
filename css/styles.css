@@ -649,4 +649,24 @@ form textarea {
 		left: 20%;
 		font-size: 20px;
 	}
+
+	.about__container,
+	.about__container p,
+	.photo img {
+		transform: scale(0.6);
+	}
+
+	.about__container {
+		position: fixed;
+		padding-top: -100px;
+		margin-top: -100px;
+		width: 300px;
+		height: 500px;
+		top: 20%;
+	}
+
+	.photo img {
+		position: relative;
+		top: 200px;
+	}
 }
