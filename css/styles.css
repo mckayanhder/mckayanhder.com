@@ -118,10 +118,6 @@ nav {
 	/* box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff; */
 }
 
-.container-item-9 {
-	position: relative;
-}
-
 .icons img {
 	display: flex;
 	justify-content: space-between;
@@ -622,7 +618,7 @@ form textarea {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
 	body {
 		transform: scale(0.9);
 	}
@@ -639,22 +635,18 @@ form textarea {
 
 	html .home {
 		max-height: 812px !important;
-		overflow-y: hidden;
 	}
 
 	.container {
-		transform: scale(0.9);
+		transform: scale(0.7);
 		position: fixed;
 		top: -50px;
 		left: -80px;
-		height: 400px;
-		width: 300px;
 	}
-
 	.swipe-scroll {
 		position: fixed;
-		top: 65%;
-		left: 8%;
-		overflow-y: hidden;
+		top: 50%;
+		left: 20%;
+		font-size: 20px;
 	}
 }
