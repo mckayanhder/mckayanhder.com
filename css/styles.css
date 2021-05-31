@@ -411,6 +411,8 @@ form {
 	position: relative;
 	left: 35%;
 	font-family: inherit;
+	top: 30vh;
+	background: var(--light-bg-offset);
 }
 
 form p {
@@ -458,12 +460,6 @@ form textarea {
 	font-weight: 200;
 	background: var(--light-background);
 	border: none;
-}
-
-.form {
-	position: relative;
-	top: 30vh;
-	background: var(--light-bg-offset);
 }
 
 @media (max-width: 900px) {
@@ -729,12 +725,12 @@ form textarea {
 		left: 10px;
 	}
 
-	.form {
+	form {
 		position: relative;
 		padding: 0;
 		margin: 0;
 		height: 500px;
-		bottom: 100px;
+		bottom: 200px;
 	}
 
 	#nav2 {
